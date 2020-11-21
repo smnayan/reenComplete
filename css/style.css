@@ -233,6 +233,23 @@ a, a:hover{
 	background: #f2f5f7;
 	padding: 80px 0;
 }
+.portfolio-section .portfolio-inner{
+	width: 100%;
+	position: relative;
+}
+.portfolio-section .portfolio-inner .port-hover{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0.8;
+	background: #0eb698;
+	display: none;
+}
+.portfolio-section .portfolio-inner:hover .port-hover{
+	display: block;
+}
 .portfolio-section .title{
 	width: 100%;
 	padding-bottom: 40px;
@@ -264,7 +281,32 @@ a, a:hover{
 
 /* carosel Section Starts Here*/
 .carousel-section{
+	width: 100%;
 	margin-top: 80px;
+}
+.carousel-section .carousel-inner{
+	width: 100%;
+	position: relative;
+	transition: 1s;
+}
+.carousel-section .carousel-inner .carousel-hover{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0.8;
+	background: #0eb698;
+	display: none;
+}
+.carousel-section .carousel-inner .carousel-hover h1{
+	margin-top: 70px;
+	font-size: 18px;
+	font-weight: 700;
+	color: #fff;
+}
+.carousel-section .carousel-inner:hover .carousel-hover{
+	display: block;
 }
 .carousel-indicators{
 	bottom: -55px;
@@ -324,6 +366,24 @@ a, a:hover{
 	text-transform: uppercase;
 	margin-bottom: 15px;
 }
+.thumb-section .thumb-inner{
+	display: inline-block;
+	position: relative;
+	margin-bottom: 2px;
+}
+.thumb-section .thumb-inner .thumb-hover{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0.8;
+	background: #0eb698;
+	display: none;
+}
+.thumb-section .thumb-inner:hover .thumb-hover{
+	display: block;
+}
 .thumb-section .title .img{
 	margin-bottom: 15px;
 }
@@ -334,14 +394,16 @@ a, a:hover{
 }
 .thumb-section .title .about-us{
 	color: #fff;
+	transition: 1s;
+}
+.thumb-section .title .about-us:hover{
+	color: #00bc9c;
 }
 .fa-arrow-right{
 	color:#fff;
 	margin-left: 10px; 
 }
-.thumb-section .title .l-work{
-	margin-bottom: 3px;
-}
+
 .thumb-section .title .fa{
 	color: #fff;
 	margin-right: 10px;
